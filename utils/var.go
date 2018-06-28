@@ -53,7 +53,7 @@ func GetResourceDomain(filetype string) (string){
 
 func OpenConnection() (db *gorm.DB, err error) {
 
-	db, err = gorm.Open("mysql", "root:root811123@tcp(106.14.2.153:3306)/shanghai?charset=utf8&parseTime=True&loc=Local")
+	db, err = gorm.Open("mysql", "root:root811123@tcp(106.14.2.153:3306)/btk_chengdu?charset=utf8&parseTime=True&loc=Local")
 	return db,err
 
 	/*switch os.Getenv("GORM_DIALECT") {
